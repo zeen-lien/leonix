@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cyberpunk-gradient {
+    background: linear-gradient(90deg, #00FFC6 0%, #FF5AF7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.admin-title-gradient {
+    background: linear-gradient(90deg, #22d3ee 0%, #4ade80 100%); /* cyan-400 to green-400 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.glass-card {
+    background: rgba(20, 20, 35, 0.85);
+    border: 2px solid transparent;
+    border-image: linear-gradient(90deg, #00FFC6 0%, #FF5AF7 100%) 1;
+    border-radius: 1rem;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 255, 198, 0.1);
+    padding: 1.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 48px rgba(255, 90, 247, 0.2);
+}
+.glass-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #00FFC6;
+    text-shadow: 0 0 20px rgba(0, 255, 198, 0.5);
+}
+.glass-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00FFC6 0%, #FF5AF7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 30px rgba(255, 90, 247, 0.3);
+}
+.sidebar-desktop {
+    background: #0a0a16;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+.nav-link {
+    position: relative;
+    transition: all 0.3s;
+    border: 1px solid rgba(0, 255, 198, 0.1);
+    margin-bottom: 0.5rem;
+}
+.nav-link:hover {
+    border-color: #00FFC6;
+    background: rgba(0, 255, 198, 0.1);
+}
+.nav-link.active {
+    border-color: #FF5AF7;
+    background: rgba(255, 90, 247, 0.1);
+}
+.fab-menu {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    z-index: 50;
+}
+.fab-button {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #00FFC6 0%, #FF5AF7 100%);
+    box-shadow: 0 0 20px rgba(0, 255, 198, 0.3),
+                0 0 40px rgba(255, 90, 247, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.fab-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 255, 198, 0.4),
+                0 0 60px rgba(255, 90, 247, 0.3);
+}
+.mobile-menu {
+    background: rgba(20, 20, 35, 0.98);
+    backdrop-filter: blur(12px);
+    border: 2px solid transparent;
+    border-image: linear-gradient(135deg, #00FFC6 0%, #FF5AF7 100%) 1;
+}
+@keyframes slideIn {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+.animate-slide-in {
+    animation: slideIn 0.3s ease-out;
+}
+.logo {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    color: #2dd4bf;
+}
+.btn-gradient {
+    background: linear-gradient(90deg, #2dd4bf 0%, #a78bfa 100%);
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 0.8rem;
+    padding: 0.9rem 2.2rem;
+}
